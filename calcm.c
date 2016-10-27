@@ -18,44 +18,40 @@ int main(void)
 	printf(" 1-suma, 2-mult, 3-resta, 4-division, 5-potencia, 6-residuo\n");
 	scanf("%d",&opc);
 	getchar();
-	printf("valor 1\n");
-	scanf("%f",&val1);
-	printf("valor 2\n");
-	scanf("%f",&val2);
 	
 	if ( opc == 1)
 	{
-		res = stack();
+		stack();
 	}
 	else
         {
         	if (opc == 2)
         	{
-			res = mult();
+			mult();
 		}
 		else
         {
             if(opc== 3)
             {
-                res= rest();
+                rest();
             }
             else
             {
                if(opc==4)
                 {
-                   res=divi(); 
+                   divi(); 
                 }
                 else
                 {
                     if(opc==5)
                     {
-                      res=pot();  
+                      pot();  
                     }
                     else
                     {
                         if(opc==6)
                         {
-                           res=resi();  
+                           resi();  
                         }
                         else
                           printf ("opcion no valida \n");  
@@ -68,7 +64,6 @@ int main(void)
         }
 		  
 	}
-    printf("el valor es %f \n",res);
         
         return 0;
 	
